@@ -11,7 +11,7 @@ namespace Biblioteca.Models
             MD5 MD5Hasher = MD5.Create();
 
             byte[] By = Encoding.Default.GetBytes(texto);
-            byte[] bytesCriptografado = MD5Hasher.ComputeHash (By);
+            byte[] bytesCriptografado = MD5Hasher.ComputeHash(By);
 
             StringBuilder SB = new StringBuilder();
 

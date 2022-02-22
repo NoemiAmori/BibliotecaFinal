@@ -5,6 +5,7 @@
     int paginaAtual = Int32.Parse(ViewData["PaginaAtual"].ToString());
     int numLivroPorPag = (Model.Count < FiltroPorPag ? Model.Count : FiltroPorPag);
     int numTotalDePag = Model.Count / numLivroPorPag + (Model.Count % numLivroPorPag == 0 ? 0 : 1);
+
 }
 
 <div class="row">

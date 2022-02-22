@@ -66,7 +66,7 @@ namespace Biblioteca.Controllers
             return View(u);
         }
 
-        public IActionResult Remover (int id)
+        public IActionResult Excluir (int id)
         {
             UsuarioService us = new UsuarioService();
             Usuario user = us.ObterPorId(id);

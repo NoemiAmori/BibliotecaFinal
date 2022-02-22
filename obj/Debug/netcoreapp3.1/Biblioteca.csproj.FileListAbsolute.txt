@@ -54,3 +54,4 @@ C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Biblioteca\obj\Debug\netcoreapp3.1\
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Edicao.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Listagem.cshtml.g.cs
+C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Deletar.cshtml.g.cs
