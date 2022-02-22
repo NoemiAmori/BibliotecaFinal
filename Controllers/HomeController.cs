@@ -36,11 +36,11 @@ namespace Biblioteca.Controllers
             string s = Criptografia.CriptografarTexto(user.Senha);
             using (BibliotecaContext bc = new BibliotecaContext())
             {
-                IQueryable<Usuario> usuarios = bc.Usuarios.Where(u => u.Username == user.Username && u.Senha == s);
+                IQueryable<Usuario> usuario = bc.Usuarios.Where(u => u.Username == user.Username && u.Senha == s);
 
-                if (usuarios.Count() > 0)
+                if (usuario.Count() > 0)
                 {
-                    HttpContext.Session.SetString("user", usuarios.FirstOrDefault().Username);
+                    HttpContext.Session.SetString("user", usuario.FirstOrDefault().Username);
                     return RedirectToAction ("Index");
                 }
                 else
