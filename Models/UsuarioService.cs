@@ -10,6 +10,7 @@ namespace Biblioteca.Models
         {
             using (BibliotecaContext bc = new BibliotecaContext())
             {
+                u.Senha = Criptografia.CriptografarTexto (u.Senha);
                 bc.Add(u);
                 bc.SaveChanges();
             }
@@ -22,7 +23,7 @@ namespace Biblioteca.Models
                 Usuario usuario = bc.Usuarios.Find(u.Id);
                 usuario.Nome = u.Nome;
                 usuario.Senha = u.Senha;
-                usuario.Username = u.Username;
+                usuario.Username = Criptografia.CriptografarTexto(u.Senha);
 
                 bc.SaveChanges();
             }
