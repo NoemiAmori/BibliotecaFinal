@@ -21,23 +21,23 @@ namespace Biblioteca.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastro(CadEmprestimoViewModel viewModel)
+        public IActionResult Cadastro(CadEmprestimoViewModel v)
         {
             Autenticacao.CheckLogin(this);
             EmprestimoService emprestimoService = new EmprestimoService();
             
-            if(viewModel.Emprestimo.Id == 0)
+            if(v.Emprestimo.Id == 0)
             {
-                emprestimoService.Inserir(viewModel.Emprestimo);
+                emprestimoService.Inserir(v.Emprestimo);
             }
             else
             {
-                emprestimoService.Atualizar(viewModel.Emprestimo);
+                emprestimoService.Atualizar(v.Emprestimo);
             }
             return RedirectToAction("Listagem");
         }
 
-        public IActionResult Listagem(string tipoFiltro, string filtro)
+        public IActionResult Listagem(string tipoFiltro, string filtro, string itensPorPagina, int numPagina, int paginaAtual)
         {
             Autenticacao.CheckLogin(this);
             FiltrosEmprestimos objFiltro = null;
@@ -47,6 +47,10 @@ namespace Biblioteca.Controllers
                 objFiltro.Filtro = filtro;
                 objFiltro.TipoFiltro = tipoFiltro;
             }
+
+            ViewData["livrosPorPagina"] = (string.IsNullOrEmpty(itensPorPagina) ? 10 : int.Parse(itensPorPagina));
+            ViewData["paginaAtual"] = (paginaAtual != 0 ? paginaAtual : 1);
+            
             EmprestimoService emprestimoService = new EmprestimoService();
             return View(emprestimoService.ListarTodos(objFiltro));
         }
