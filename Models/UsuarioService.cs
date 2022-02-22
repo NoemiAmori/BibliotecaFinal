@@ -23,7 +23,7 @@ namespace Biblioteca.Models
                 Usuario usuario = bc.Usuarios.Find(u.Id);
                 usuario.Nome = u.Nome;
                 usuario.Senha = u.Senha;
-                usuario.Username = Criptografia.CriptografarTexto(u.Senha);
+                usuario.Username = u.Username;
 
                 bc.SaveChanges();
             }
@@ -42,6 +42,15 @@ namespace Biblioteca.Models
             using (BibliotecaContext bc = new BibliotecaContext())
             {
                 return bc.Usuarios.Find(id);
+            }
+        }
+
+        public void Deletar (Usuario user)
+        {
+            using (BibliotecaContext bc = new BibliotecaContext())
+            {
+                bc.Remove(user);
+                bc.SaveChanges();
             }
         }
     }
