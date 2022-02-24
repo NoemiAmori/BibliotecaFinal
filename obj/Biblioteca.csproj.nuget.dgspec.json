@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\noemi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Biblioteca\\obj\\",
+        "outputPath": "C:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noemi\\AppData\\Roaming\\NuGet\\NuGet.Config"
