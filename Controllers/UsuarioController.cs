@@ -3,22 +3,19 @@ using System.Collections;
 using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-
 namespace Biblioteca.Controllers
 {
     public class UsuarioController : Controller
     {
         public IActionResult Cadastro()
         {
-            Autenticacao.CheckLogin (this, HttpContext.Session.GetString("user"));
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             return View();
         }
-
         [HttpPost]
         public IActionResult Cadastro(Usuario u)
         {
             UsuarioService usuarioService = new UsuarioService();
-
             if (u.Id == 0)
             {
                 usuarioService.Inserir(u);
@@ -43,30 +40,28 @@ namespace Biblioteca.Controllers
                 {
                     u.Senha = Criptografia.CriptografarTexto(u.Senha);
                 }
+
                 usuarioService.Atualizar(u);
             }
 
             return RedirectToAction("Listagem");
         }
-
         public IActionResult Listagem()
         {
-            Autenticacao.CheckLogin (this, HttpContext.Session.GetString("user"));
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             UsuarioService usuarioService = new UsuarioService();
-
             return View(usuarioService.ListarTodos());
         }
-
         public IActionResult Edicao(int id)
         {
-            Autenticacao.CheckLogin (this, HttpContext.Session.GetString("user"));
+            Autenticacao.CheckLogin(this, HttpContext.Session.GetString("user"));
             UsuarioService usuarioService = new UsuarioService();
             Usuario u = usuarioService.ObterPorId(id);
 
             return View(u);
         }
 
-        public IActionResult Excluir (int id)
+        public IActionResult Remover(int id)
         {
             UsuarioService us = new UsuarioService();
             Usuario user = us.ObterPorId(id);
@@ -75,13 +70,12 @@ namespace Biblioteca.Controllers
         }
 
         [HttpPost]
-        public IActionResult Excluir (Usuario user)
+        public IActionResult Remover(Usuario user)
         {
             if (user.Username == "admin")
-
             {
-                ViewBag.Erro = "Usuário não pode ser removido!!!";
-                return View (user);
+                ViewBag.Erro = "Não é possível remover este usuário!";
+                return View(user);
             }
 
             else
@@ -89,8 +83,8 @@ namespace Biblioteca.Controllers
                 UsuarioService us = new UsuarioService();
                 us.Deletar(user);
 
-                return RedirectToAction ("Listagem");
+                return RedirectToAction("Listagem");
             }
         }
     }
-} 
+}

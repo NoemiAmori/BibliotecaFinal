@@ -14452,11 +14452,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Views\\Usuario\\Deletar.cshtml",
-      "TargetPath": "Views\\Usuario\\Deletar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Views\\Livro\\Cadastro.cshtml",
       "TargetPath": "Views\\Livro\\Cadastro.cshtml",
       "FileKind": "mvc"
@@ -14484,6 +14479,11 @@
     {
       "FilePath": "c:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Views\\Livro\\Edicao.cshtml",
       "TargetPath": "Views\\Livro\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\noemi\\Desktop\\SENAC\\MODULO II\\UC 07\\Noemi_Atv_02\\Biblioteca\\Views\\Usuario\\Remover.cshtml",
+      "TargetPath": "Views\\Usuario\\Remover.cshtml",
       "FileKind": "mvc"
     },
     {

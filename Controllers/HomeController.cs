@@ -33,6 +33,12 @@ namespace Biblioteca.Controllers
         [HttpPost]
         public IActionResult Login(Usuario user)
         {
+            if (string.IsNullOrEmpty(user.Senha) || string.IsNullOrEmpty(user.Username))
+            {
+                ViewData["Erro"] = "Usuário ou senha inválida";
+                return View();
+            }
+            
             string s = Criptografia.CriptografarTexto(user.Senha);
             using (BibliotecaContext bc = new BibliotecaContext())
             {

@@ -98,7 +98,6 @@ C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\n
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Cadastro.cshtml.g.cs
-C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Deletar.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Edicao.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Listagem.cshtml.g.cs
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -112,3 +111,4 @@ C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\n
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.dll
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.pdb
 C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.genruntimeconfig.cache
+C:\Users\noemi\Desktop\SENAC\MODULO II\UC 07\Noemi_Atv_02\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Remover.cshtml.g.cs
